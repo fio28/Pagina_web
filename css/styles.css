@@ -1,0 +1,154 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primario: #003366;
+  --color-secundario: #f8f8f8;
+  --color-texto: #333;
+  --color-boton: #0055aa;
+  --color-blanco: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+/* Header y navbar */
+.header__navbar {
+  background-color: var(--color-primario);
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar__list {
+  list-style: none;
+}
+
+.navbar__item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.navbar__link {
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.navbar__link:hover,
+.navbar__link.active {
+  background-color: var(--color-boton);
+}
+
+/* Intro / Encabezado */
+.intro {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--color-secundario);
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('https://www.anabad.org/wp-content/uploads/2023/04/estante-libros.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.intro__title,
+.intro__text {
+  position: relative;
+  padding: 2rem;
+  color: #000000;
+  z-index: 1;
+}
+
+/* Secciones principales */
+.about,
+.features,
+.recomendations,
+.contact {
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  margin: 2rem auto;
+  border-radius: 8px;
+  max-width: 900px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Icono en about */
+.about__icon {
+  width: 60px;
+  margin: 1rem 0;
+}
+
+/* Botones */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-primario);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #001c3f;
+}
+
+/* Iconos en features */
+.features__icons span {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+}
+
+/* Carrusel */
+.recomendations__carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.carousel__item {
+  height: 200px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.carousel__button {
+  background-color: var(--color-primario);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: #002f6c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}

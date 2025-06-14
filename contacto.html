@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/contacto.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Biblioteca Accesible</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-section">
+        <h1>Contáctanos</h1>
+        <p>¿Tienes preguntas, sugerencias o necesitas ayuda? Completa el formulario o utiliza los medios de contacto que aparecen abajo.</p>
+
+        <form class="contact-form" action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Información de contacto</h2>
+            <p><strong>Correo:</strong> contacto@bibliotecaaccesible.com</p>
+            <p><strong>Teléfono:</strong> +51 999 888 777</p>
+            <p><strong>Dirección:</strong>Av. tingo maria 1122, lima 15083</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Biblioteca Accesible © 2025</p>
+    </footer>
+
+</body>
+</html>

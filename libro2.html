@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cien años de soledad - Detalles</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/libro.css">
+</head>
+<body>
+
+    <!-- Menú Desplegable -->
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="book-details">
+        <div class="book-frame">
+            <img src="images/libro2.jpg" alt="Portada de Cien años de soledad">
+        </div>
+        <div class="book-info">
+            <h2>Reseña</h2>
+            <p>"Cien años de soledad", escrita por Gabriel García Márquez, es una de las obras más importantes de la literatura hispanoamericana. Narra la historia de la familia Buendía a lo largo de varias generaciones en el mítico pueblo de Macondo.</p>
+
+            <h3>Resumen</h3>
+            <p>La novela explora temas como el amor, la soledad, el poder, el tiempo cíclico y el destino, utilizando el realismo mágico como estilo narrativo característico del autor.</p>
+
+            <button onclick="playAudio()">Escuchar reseña</button>
+
+            <audio id="audio" src="audio/audio_reseña2.mp3" preload="auto"></audio>
+        </div>
+    </div>
+
+    <footer>
+        <p>Biblioteca Accesible © 2025</p>
+    </footer>
+
+    <script>
+        function playAudio() {
+            const audio = document.getElementById('audio');
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>

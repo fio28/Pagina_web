@@ -1,0 +1,33 @@
+/* Estilos para la página del libro */
+.book-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.book-frame {
+    width: 45%;
+    border: 3px solid #0044cc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.book-frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-info {
+    width: 50%;
+    text-align: justify;
+}
+
+.book-info h2 {
+    color: #0044cc;
+}
+
+.book-info p {
+    font-size: 16px;
+    color: #555;
+}

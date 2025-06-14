@@ -1,0 +1,79 @@
+
+/* Estilo general para la sección de contacto */
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h1,
+.contact-section h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 0.75rem;
+    background-color: #0077cc;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #005fa3;
+}
+
+/* Información de contacto adicional */
+.contact-info {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-left: 4px solid #0077cc;
+    border-radius: 8px;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    color: #333;
+}
